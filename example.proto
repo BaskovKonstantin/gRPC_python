@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package example;
+
+service MyService {
+  rpc MyMethod(RequestMessage) returns (ResponseMessage) {}
+}
+
+message RequestMessage {
+  string name = 1;
+}
+
+message ResponseMessage {
+  string greeting = 1;
+}
